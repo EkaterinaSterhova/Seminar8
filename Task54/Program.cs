@@ -48,7 +48,6 @@ Console.Clear();
 Console.Write("Введите размеры двумерного массива: ");
 int[] size = Console.ReadLine()!.Split().Select(x => int.Parse(x)).ToArray();
 int[,] matrix = new int[size[0], size[1]];
-Console.Clear();
 InputMatrix(matrix);
 Console.WriteLine("Заданный массив");
 PrintMatrix(matrix);
